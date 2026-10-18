@@ -81,7 +81,9 @@ npm run dist:win
 
 `npm test` cobre as conversões principais neste ambiente: imagem (incluindo SVG, ICO, AVIF e HEIC), vídeo, áudio, PDF, recorte, aparo, junção, compressão e a mensagem quando o LibreOffice não está instalado.
 
-`npm run dist:win` baixa o Electron de Windows e, se faltar, compila um FFmpeg GPL enxuto para Windows (`scripts/build-ffmpeg-win.sh`, precisa de mingw-w64, nasm, cmake e pkg-config). O instalador sai em `release/Vireun-Converter-Setup-1.0.0.exe` (cerca de 90 MB). Esse FFmpeg traz H.264, VP9, WebP, MP3, Vorbis, Opus, AAC, FLAC e AV1. HEIC usa o decodificador incluso no app. SVG vira PNG pelo resvg.
+O instalador para Windows já está em `instalador/Vireun-Converter-Setup-1.0.0.exe` (cerca de 90 MB).
+
+`npm run dist:win` baixa o Electron de Windows e, se faltar, compila um FFmpeg GPL enxuto para Windows (`scripts/build-ffmpeg-win.sh`, precisa de mingw-w64, nasm, cmake e pkg-config). Ele gera de novo o mesmo arquivo em `release/`. Esse FFmpeg traz H.264, VP9, WebP, MP3, Vorbis, Opus, AAC, FLAC e AV1. HEIC usa o decodificador incluso no app. SVG vira PNG pelo resvg.
 
 O arquivo `tests/fixtures/amostra.heic` só serve para o teste do decodificador. Ele não entra no instalador.
 
