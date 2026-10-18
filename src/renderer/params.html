@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vireun Converter</title>
+  <link rel="stylesheet" href="base.css" />
+  <link rel="stylesheet" href="params.css" />
+</head>
+<body>
+  <section id="crop" hidden>
+    <header>
+      <p class="kicker">Imagem</p>
+      <h1>Recortar</h1>
+      <p id="crop-file"></p>
+    </header>
+    <div id="stage"><img id="pic" alt="" /><div id="sel" hidden></div></div>
+    <p id="crop-meta">Arraste para marcar a área.</p>
+    <footer>
+      <button class="ghost" id="crop-cancel" type="button">Cancelar</button>
+      <button class="solid" id="crop-ok" type="button" disabled>Aplicar recorte</button>
+    </footer>
+  </section>
+  <section id="trim" hidden>
+    <header>
+      <p class="kicker">Trecho</p>
+      <h1>Aparar</h1>
+      <p id="trim-file"></p>
+    </header>
+    <img id="poster" alt="" hidden />
+    <label>Início <span id="start-label">0:00</span>
+      <input id="start" type="range" min="0" step="0.1" value="0" />
+    </label>
+    <label>Fim <span id="end-label">0:00</span>
+      <input id="end" type="range" min="0" step="0.1" value="0" />
+    </label>
+    <p id="trim-meta"></p>
+    <footer>
+      <button class="ghost" id="trim-cancel" type="button">Cancelar</button>
+      <button class="solid" id="trim-ok" type="button">Aplicar</button>
+    </footer>
+  </section>
+  <section id="compress" hidden>
+    <header>
+      <p class="kicker">Tamanho</p>
+      <h1>Comprimir</h1>
+      <p id="compress-file"></p>
+    </header>
+    <p id="compress-note"></p>
+    <div id="levels"></div>
+    <footer>
+      <button class="ghost" id="compress-cancel" type="button">Cancelar</button>
+    </footer>
+  </section>
+  <section id="info" hidden>
+    <header>
+      <p class="kicker">Vireun</p>
+      <h1 id="info-title">Aviso</h1>
+    </header>
+    <p id="info-body"></p>
+    <footer>
+      <button class="solid" id="info-ok" type="button">Entendi</button>
+    </footer>
+  </section>
+  <script src="params.js"></script>
+</body>
+</html>

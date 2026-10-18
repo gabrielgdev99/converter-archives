@@ -1,0 +1,41 @@
+Vireun Converter usa estes componentes de terceiros. O app em si é de uso interno da agência Vireun.
+
+FFmpeg
+Licenca: GPL versao 2 ou posterior, para o binario incluido.
+O programa chama o ffmpeg.exe como processo separado. Ele nao e linkado dentro do executavel.
+O instalador inclui um ffmpeg.exe estatico montado por scripts/build-ffmpeg-win.sh (FFmpeg 7.1.1, x264, libvpx, libaom, libwebp, LAME, libvorbis, opus).
+Codigo fonte: https://ffmpeg.org
+A licenca completa do binario esta em resources/licenses/FFMPEG-LICENSE.txt depois da instalacao.
+x264 entra nesse binario sob GPL: https://code.videolan.org/videolan/x264
+
+Electron
+Licenca: MIT
+https://www.electronjs.org
+
+pdf.js
+Licenca: Apache 2.0
+https://github.com/mozilla/pdf.js
+
+pdf-lib
+Licenca: MIT
+https://pdf-lib.js.org
+
+@napi-rs/canvas
+Licenca: MIT
+https://github.com/Brooooooklyn/canvas
+
+resvg (via @resvg/resvg-wasm)
+Licenca: MPL 2.0
+https://github.com/linebender/resvg
+
+heic-convert e heic-decode
+Licenca: ISC
+https://github.com/catdad-experiments/heic-convert
+
+png-to-ico
+Licenca: MIT
+
+Outfit e Fraunces
+Licenca: SIL Open Font License 1.1
+https://fonts.google.com/specimen/Outfit
+https://fonts.google.com/specimen/Fraunces

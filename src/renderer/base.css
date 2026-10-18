@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Outfit Local";
+  src: url("../../node_modules/@fontsource/outfit/files/outfit-latin-ext-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit Local";
+  src: url("../../node_modules/@fontsource/outfit/files/outfit-latin-ext-500-normal.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit Local";
+  src: url("../../node_modules/@fontsource/outfit/files/outfit-latin-ext-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fraunces Local";
+  src: url("../../node_modules/@fontsource/fraunces/files/fraunces-latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --bg: #14110e;
+  --bg-2: #1e1914;
+  --ink: #f4efe8;
+  --muted: #b3a89c;
+  --copper: #e08a3c;
+  --copper-2: #f0b27a;
+  --sage: #8eae96;
+  --sand: #d4b483;
+  --danger: #e07a62;
+  --line: rgba(224, 138, 60, 0.35);
+  --font: "Outfit Local", "Segoe UI", sans-serif;
+  --display: "Fraunces Local", Georgia, serif;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+  color: var(--ink);
+}
+
+button, input { font-family: inherit; }
+
+button {
+  cursor: pointer;
+}
+
+.kicker {
+  margin: 0;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--copper);
+  font-weight: 600;
+}
+
+h1 {
+  font-family: var(--display);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}

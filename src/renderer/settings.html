@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Configurações</title>
+  <link rel="stylesheet" href="base.css" />
+  <link rel="stylesheet" href="settings.css" />
+</head>
+<body>
+  <header>
+    <p class="kicker">Vireun Converter</p>
+    <h1>Configurações</h1>
+    <p class="lead">O app fica na bandeja do sistema. Nada é enviado para a internet.</p>
+  </header>
+  <section>
+    <h2>Atalho</h2>
+    <div class="row">
+      <div>
+        <strong>Zona de soltar</strong>
+        <p>Abre o alvo onde você solta o arquivo.</p>
+      </div>
+      <button id="shortcut" type="button">Ctrl+Alt+V</button>
+    </div>
+    <p id="shortcut-help">Clique e pressione Ctrl ou Alt com outra tecla. Esc cancela.</p>
+  </section>
+  <section>
+    <h2>Windows</h2>
+    <label class="check"><input id="login" type="checkbox" /> Iniciar com o Windows</label>
+    <label class="check"><input id="menu" type="checkbox" /> Mostrar "Converter com Vireun" no Explorer</label>
+    <p id="windows-note"></p>
+  </section>
+  <section>
+    <h2>Avisos</h2>
+    <label class="check"><input id="notify" type="checkbox" /> Avisar quando a conversão terminar</label>
+  </section>
+  <section class="note">
+    <h2>Por que não há Shift e arrastar</h2>
+    <p>O Windows não entrega o arquivo arrastado para um atalho global de forma estável. A zona de soltar e o menu do Explorer usam o mesmo menu radial, sem hook frágil.</p>
+  </section>
+  <footer>
+    <p id="status"></p>
+    <button id="close" type="button">Fechar</button>
+  </footer>
+  <script src="settings.js"></script>
+</body>
+</html>

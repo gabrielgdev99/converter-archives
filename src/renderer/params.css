@@ -1,0 +1,67 @@
+body {
+  background: var(--bg);
+  min-height: 100vh;
+  padding: 22px 24px 18px;
+}
+
+h1 { margin: 4px 0 6px; font-size: 32px; }
+header p, #crop-meta, #trim-meta, #compress-note, #info-body, label {
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+#stage {
+  position: relative;
+  margin: 12px 0;
+  background: #0e0c0a;
+  border-radius: 16px;
+  min-height: 280px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+#pic, #poster {
+  max-width: 100%;
+  max-height: 420px;
+  display: block;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+#sel {
+  position: absolute;
+  border: 2px solid var(--copper);
+  background: rgba(224, 138, 60, 0.18);
+  box-shadow: inset 0 0 0 1px rgba(26, 22, 18, 0.4);
+}
+
+label { display: block; margin: 12px 0; font-size: 14px; }
+label span { color: var(--ink); float: right; }
+input[type="range"] { width: 100%; accent-color: var(--copper); margin-top: 6px; }
+
+#levels { display: grid; gap: 8px; margin: 12px 0 16px; }
+.level {
+  text-align: left;
+  background: var(--bg-2);
+  color: var(--ink);
+  border: 1px solid rgba(243, 234, 223, 0.08);
+  border-radius: 14px;
+  padding: 12px 14px;
+}
+.level strong { display: block; font-size: 16px; }
+.level span { color: var(--muted); font-size: 13px; }
+.level:hover { border-color: var(--copper); }
+
+.warn {
+  background: rgba(224, 122, 98, 0.12);
+  color: #f0c2b6;
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+footer { display: flex; justify-content: flex-end; gap: 8px; margin-top: 8px; }
+.ghost, .solid { border-radius: 999px; padding: 8px 16px; }
+.ghost { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+.solid { background: var(--copper); color: #1a1612; border: 0; font-weight: 600; }
+.solid:disabled { opacity: 0.4; cursor: default; }

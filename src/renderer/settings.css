@@ -1,0 +1,60 @@
+body {
+  background: var(--bg);
+  min-height: 100vh;
+  padding: 28px 28px 22px;
+}
+
+h1 { margin: 6px 0 8px; font-size: 34px; }
+h2 {
+  margin: 0 0 10px;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sand);
+  font-weight: 600;
+}
+
+.lead, section p, .check { color: var(--muted); font-size: 14px; line-height: 1.45; }
+.lead { margin: 0 0 18px; }
+
+section {
+  background: var(--bg-2);
+  border: 1px solid rgba(243, 234, 223, 0.06);
+  border-radius: 16px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+}
+
+.row { display: flex; justify-content: space-between; gap: 12px; align-items: center; }
+.row p { margin: 4px 0 0; }
+.row strong { color: var(--ink); }
+
+#shortcut {
+  background: #2a2118;
+  color: var(--copper-2);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 14px;
+  min-width: 120px;
+}
+
+#shortcut.recording {
+  border-color: var(--copper);
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse { 50% { box-shadow: 0 0 0 4px rgba(224, 138, 60, 0.18); } }
+
+.check { display: flex; gap: 10px; align-items: center; margin: 8px 0; color: var(--ink); }
+.check input { accent-color: var(--copper); width: 16px; height: 16px; }
+
+footer { display: flex; justify-content: space-between; align-items: end; gap: 12px; margin-top: 8px; }
+#status { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.4; }
+#close {
+  background: var(--copper);
+  color: #1a1612;
+  border: 0;
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-weight: 600;
+}
